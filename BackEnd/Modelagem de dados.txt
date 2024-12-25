@@ -1,0 +1,84 @@
+CREATE TABLE times (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cidade VARCHAR(100),
+    estado VARCHAR(50),
+    bairro VARCHAR(50),
+    endereco VARCHAR(100),
+    campo VARCHAR(100),
+    email VARCHAR(100),
+    telefone VARCHAR(13),
+    conferencia VARCHAR(50),
+    divisao VARCHAR(50),
+    data_fundacao DATE,
+    logo_url VARCHAR(255),
+    instagram VARCHAR(255),
+    facebook VARCHAR(255),
+    twitter VARCHAR(255),
+    numero_jogadores INT,
+    descricao TEXT,
+    data_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    latitude DECIMAL(9,6),
+    longitude DECIMAL(9,6),
+    status ENUM('ativa', 'inativa'),
+    categoria_idade VARCHAR(50),
+    horarios_treino TEXT,
+    informacoes_inscricao TEXT,
+    historico_conquistas TEXT,
+    liga_federacao VARCHAR(100),
+    website VARCHAR(255),
+    capacidade_campo INT,
+    patrocinadores TEXT
+);
+
+
+
+CREATE TABLE jogadores (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    sobrenome VARCHAR(100),
+    posicao VARCHAR(50),
+    time_id INT,
+    altura_cm INT,
+    peso_kg INT,
+    data_nascimento DATE,
+    FOREIGN KEY (time_id) REFERENCES times(id) ON DELETE SET NULL
+);
+
+
+CREATE TABLE jogos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    data DATE NOT NULL,
+    time_casa_id INT NOT NULL,
+    time_visitante_id INT NOT NULL,
+    placar_casa INT DEFAULT 0,
+    placar_visitante INT DEFAULT 0,
+    FOREIGN KEY (time_casa_id) REFERENCES times(id) ON DELETE CASCADE,
+    FOREIGN KEY (time_visitante_id) REFERENCES times(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE estatisticas_jogador (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    jogador_id INT NOT NULL,
+    jogo_id INT NOT NULL,
+    at_bats INT DEFAULT 0,
+    hits INT DEFAULT 0,
+    home_runs INT DEFAULT 0,
+    rbis INT DEFAULT 0,
+    strikeouts INT DEFAULT 0,
+    era DECIMAL(4,2),
+    FOREIGN KEY (jogador_id) REFERENCES jogadores(id) ON DELETE CASCADE,
+    FOREIGN KEY (jogo_id) REFERENCES jogos(id) ON DELETE CASCADE
+);
+
+
+CREATE TABLE estatisticas_time (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time_id INT NOT NULL,
+    temporada YEAR NOT NULL,
+    vitorias INT DEFAULT 0,
+    derrotas INT DEFAULT 0,
+    empates INT DEFAULT 0,
+    FOREIGN KEY (time_id) REFERENCES times(id) ON DELETE CASCADE
+);

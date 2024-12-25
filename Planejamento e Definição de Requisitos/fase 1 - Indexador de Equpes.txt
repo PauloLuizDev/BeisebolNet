@@ -1,0 +1,82 @@
+Organizar o desenvolvimento do site em micro serviços pode adiantar a publicação de novos projetos
+Dar o sentimento de que o projeto tem mais vitorias que planejamentos
+
+**Documentação 5W2H - Ferramenta de Indexação de Equipes de Beisebol**
+
+---
+
+### **1. What (O que)**
+**Ferramenta de Indexação de Equipes de Beisebol**
+- Uma aplicação web que permite o cadastro e consulta de equipes amadoras de beisebol no Brasil.
+- Objetivos principais:
+  - Facilitar a divulgação de informações sobre equipes.
+  - Promover a interação entre jogadores, treinadores e outros interessados.
+  - Auxiliar na localização de equipes próximas por meio de geolocalização.
+
+---
+
+### **2. Why (Por que)**
+**Justificativa**
+- Baixa visibilidade do beisebol amador no Brasil.
+- Dificuldade de localizar equipes, campos e eventos locais.
+- Necessidade de fomentar a prática esportiva e criar uma rede de contatos dentro da comunidade de beisebol.
+
+---
+
+### **3. Who (Quem)**
+**Público-Alvo**
+- Equipes amadoras de beisebol no Brasil.
+- Jogadores interessados em encontrar equipes para participar.
+- Organizadores de ligas e eventos.
+- Entusiastas do beisebol.
+
+---
+
+### **4. Where (Onde)**
+**Local de Atuação**
+- Online, acessível por meio de navegadores web.
+- Focado inicialmente em equipes localizadas no Brasil, com possibilidade de expansão futura para outros países.
+
+---
+
+### **5. When (Quando)**
+**Prazos e Marcos**
+- **Início do Desenvolvimento**: Dezembro de 2024.
+- **Primeira Entrega (MVP)**: Janeiro de 2025.
+- **Fases Futuras**:
+  - Integração de novas funcionalidades (jogadores, estatísticas, eventos).
+  - Crescimento da base de usuários até o final de 2025.
+
+---
+
+### **6. How (Como)**
+**Estratégias e Ferramentas**
+- **Desenvolvimento Tecnológico**:
+  - Linguagens e Frameworks: JavaScript, React, Node.js.
+  - Banco de Dados: MySQL.
+- **Funcionalidades Iniciais**:
+  - Cadastro de equipes com informações detalhadas (nome, localização, contato, histórico).
+  - Busca por equipes utilizando filtros (localização, nome, divisão).
+- **Design e Experiência do Usuário**:
+  - Interface simples e intuitiva baseada em Bootstrap.
+- **Infraestrutura**:
+  - Hospedagem em servidor cloud para alta disponibilidade.
+
+---
+
+### **7. How Much (Quanto)**
+**Estimativa de Custos**
+- **Infraestrutura**:
+  - Hospedagem e Banco de Dados: R$ 100,00/mês (estimativa inicial).
+- **Desenvolvimento**:
+  - Investimento em horas de trabalho (próprio ou equipe).
+- **Marketing**:
+  - Divulgação inicial em redes sociais: R$ 500,00.
+- **Manutenção**:
+  - Atualizações e melhorias: R$ 200,00/mês.
+
+---
+
+**Conclusão**
+A ferramenta de indexação de equipes de beisebol é um passo inicial do projeto BeisebolNet, permitindo entregas mais rápidas e segmentadas. Com um planejamento baseado no método 5W2H, é possível garantir clareza nos objetivos e direção para o sucesso do projeto.
+
