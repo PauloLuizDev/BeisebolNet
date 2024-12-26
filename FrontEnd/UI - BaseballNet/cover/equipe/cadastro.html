@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+
+<head>
+    <script src="../../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Contato</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+    <link href="../../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Custom styles for this template -->
+    <link href="../cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+
+
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">Beisebol<span class="text-warning">Net</span></h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold py-1 px-0" href="index.html">Início</a>
+                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="sobre.html">Sobre</a>
+                    <a class="nav-link fw-bold py-1 px-0 active" href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3">
+            <div class="container my-5">
+                <h1 class="text-center mb-4">Cadastro de Times</h1>
+                <form>
+                    <!-- Nome e Data de Fundação -->
+                    <div class="row mb-3">
+                        <div class="col-md-8">
+                            <label for="nome" class="form-label">Nome do Time</label>
+                            <input type="text" class="form-control" id="nome" name="nome" required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="data_fundacao" class="form-label">Data de Fundação</label>
+                            <input type="date" class="form-control" id="data_fundacao" name="data_fundacao">
+                        </div>
+                    </div>
+
+                    <!-- Cidade, Estado e Bairro -->
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <label for="cidade" class="form-label">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" name="cidade">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="estado" class="form-label">Estado</label>
+                            <input type="text" class="form-control" id="estado" name="estado">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" name="bairro">
+                        </div>
+                    </div>
+
+                    <!-- Endereço e Campo -->
+                    <div class="mb-3">
+                        <label for="endereco" class="form-label">Endereço</label>
+                        <input type="text" class="form-control" id="endereco" name="endereco">
+                    </div>
+                    <div class="mb-3">
+                        <label for="campo" class="form-label">Nome do Campo</label>
+                        <input type="text" class="form-control" id="campo" name="campo">
+                    </div>
+
+                    <!-- Contato -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="text" class="form-control" id="telefone" name="telefone">
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociais -->
+                    <div class="mb-3">
+                        <label for="instagram" class="form-label">Instagram</label>
+                        <input type="url" class="form-control" id="instagram" name="instagram"
+                            placeholder="https://www.instagram.com/seuperfil">
+                    </div>
+                    <div class="mb-3">
+                        <label for="facebook" class="form-label">Facebook</label>
+                        <input type="url" class="form-control" id="facebook" name="facebook"
+                            placeholder="https://www.facebook.com/seupagina">
+                    </div>
+                    <div class="mb-3">
+                        <label for="twitter" class="form-label">Twitter</label>
+                        <input type="url" class="form-control" id="twitter" name="twitter"
+                            placeholder="https://www.twitter.com/seuusuario">
+                    </div>
+
+                    <!-- Logo -->
+                    <div class="mb-3">
+                        <label for="logo" class="form-label">Logo do Time</label>
+                        <input type="file" class="form-control" id="logo" name="logo" accept="image/*">
+                    </div>
+
+                    <!-- Informações Gerais -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="conferencia" class="form-label">Conferência</label>
+                            <input type="text" class="form-control" id="conferencia" name="conferencia">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="divisao" class="form-label">Divisão</label>
+                            <input type="text" class="form-control" id="divisao" name="divisao">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricao" name="descricao" rows="4"></textarea>
+                    </div>
+
+                    <!-- Coordenadas Geográficas -->
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="latitude" class="form-label">Latitude</label>
+                            <input type="text" class="form-control" id="latitude" name="latitude">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="longitude" class="form-label">Longitude</label>
+                            <input type="text" class="form-control" id="longitude" name="longitude">
+                        </div>
+                    </div>
+
+                    <!-- Status -->
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <select class="form-select" id="status" name="status">
+                            <option value="ativa">Ativa</option>
+                            <option value="inativa">Inativa</option>
+                        </select>
+                    </div>
+
+                    <!-- Botão de Envio -->
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Cadastrar Time</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <!-- Rodapé -->
+        <footer class="mt-auto text-white-50">
+            <div class="container">
+                <!-- Rodapé 
+        <div class="row justify-content-center">
+            <!-- Coluna: Informações
+            <div class="col-md-4">
+                <h5>Sobre o Projeto</h5>
+                <p>Adicione aqui uma breve descrição do projeto ou informações relevantes.</p>
+            </div>
+
+            <!-- Coluna: Links Rápidos
+            <div class="col-md-4">
+                <h5>Links Rápidos</h5>
+                <ul class="list-unstyled ">
+                    <li><a href="#" class="footer-link text-white">Política de Privacidade</a></li>
+                    <li><a href="#" class="footer-link text-white">Termos de Uso</a></li>
+                    <li><a href="#" class="footer-link text-white">Contato</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna: Redes Sociais
+            <div class="col-md-4">
+                <h5>Redes Sociais</h5>
+                <a href="#" class="footer-link me-3 text-white">Facebook</a>
+                <a href="#" class="footer-link me-3 text-white">Twitter</a>
+                <a href="#" class="footer-link text-white">Instagram</a>
+            </div>
+        </div>
+      -->
+                <div class="text-center mt-4">
+                    <small>&copy; 2024 BeisebolNet. Todos os direitos reservados.</small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
